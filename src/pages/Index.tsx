@@ -76,7 +76,7 @@ const Index = () => {
           <div className="text-center animate-fade-in-up">
             <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
               <Icon name="Wind" className="text-white" size={20} />
-              <span className="text-white font-semibold">Профессиональное обслуживание</span>
+              <span className="text-white font-semibold">ВентСервис</span>
             </div>
             
             <h1 className="font-heading text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
