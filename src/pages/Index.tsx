@@ -84,9 +84,7 @@ const Index = () => {
               <span className="text-white/90">от 3000₽ | Выезд бесплатно</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Прочистка воздуховодов, ТО систем вентиляции, ремонт. Работаем по договору подряда. Опыт 10+ лет. Выезд и замеры бесплатно.
-            </p>
+            <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">Прочистка воздуховодов, ТО систем вентиляции, ремонт. Работаем по договору подряда. Опыт 7 лет. Выезд и замеры бесплатно.</p>
             
             <div className="flex flex-col gap-4 items-center animate-scale-in">
               <Button 
