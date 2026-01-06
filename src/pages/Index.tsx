@@ -74,20 +74,9 @@ const Index = () => {
         
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center animate-fade-in-up">
-            <div className="flex flex-col items-center gap-3 mb-6">
-              <Button
-                variant="outline"
-                size="sm"
-                className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-primary transition-all duration-300"
-                onClick={() => window.open(avitoLink, '_blank')}
-              >
-                <Icon name="ExternalLink" className="mr-2" size={16} />
-                Смотреть объявление на Авито
-              </Button>
-              <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
-                <Icon name="Wind" className="text-white" size={20} />
-                <span className="text-white font-semibold">Профессиональное обслуживание</span>
-              </div>
+            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+              <Icon name="Wind" className="text-white" size={20} />
+              <span className="text-white font-semibold">Профессиональное обслуживание</span>
             </div>
             
             <h1 className="font-heading text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
@@ -293,6 +282,17 @@ const Index = () => {
               </form>
 
               <div className="mt-8 pt-8 border-t-2 border-dashed border-border">
+                <div className="mb-6">
+                  <Button
+                    size="lg"
+                    className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold text-base py-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]"
+                    onClick={() => window.open(avitoLink, '_blank')}
+                  >
+                    <Icon name="ExternalLink" className="mr-2" size={22} />
+                    Смотреть объявление на Авито
+                  </Button>
+                </div>
+                
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                   <div className="flex items-center gap-3">
                     <div className="p-3 rounded-full bg-primary/10">
