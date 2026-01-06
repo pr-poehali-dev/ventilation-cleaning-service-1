@@ -51,13 +51,15 @@ const Index = () => {
   ];
 
   const phoneNumber = '+79530869887';
-  const whatsappLink = `https://wa.me/79530869887`;
+  const whatsappNumber = '+79969376177';
+  const whatsappLink = `https://wa.me/79969376177`;
   const telLink = `tel:${phoneNumber}`;
+  const avitoLink = 'https://www.avito.ru/temryuk/predlozheniya_uslug/chistka_ventilyatsii_obsluzhivanie_7815560021';
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const message = `Имя: ${formData.name}%0AТелефон: ${formData.phone}%0AСообщение: ${formData.message}`;
-    window.open(`https://wa.me/79530869887?text=${message}`, '_blank');
+    window.open(`https://wa.me/79969376177?text=${message}`, '_blank');
     toast({
       title: "Открываю WhatsApp!",
       description: "Отправьте сообщение для связи с нами.",
@@ -72,9 +74,20 @@ const Index = () => {
         
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-              <Icon name="Wind" className="text-white" size={20} />
-              <span className="text-white font-semibold">Профессиональное обслуживание</span>
+            <div className="flex flex-col items-center gap-3 mb-6">
+              <Button
+                variant="outline"
+                size="sm"
+                className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-primary transition-all duration-300"
+                onClick={() => window.open(avitoLink, '_blank')}
+              >
+                <Icon name="ExternalLink" className="mr-2" size={16} />
+                Смотреть объявление на Авито
+              </Button>
+              <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
+                <Icon name="Wind" className="text-white" size={20} />
+                <span className="text-white font-semibold">Профессиональное обслуживание</span>
+              </div>
             </div>
             
             <h1 className="font-heading text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
@@ -296,8 +309,8 @@ const Index = () => {
                       <Icon name="MessageCircle" className="text-secondary" size={24} />
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Напишите нам</p>
-                      <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-secondary transition-colors">WhatsApp</a>
+                      <p className="text-sm text-muted-foreground">Напишите в WhatsApp</p>
+                      <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-secondary transition-colors">+7 996 937-61-77</a>
                     </div>
                   </div>
                 </div>
