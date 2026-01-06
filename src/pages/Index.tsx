@@ -309,8 +309,8 @@ const Index = () => {
                       <Icon name="MessageCircle" className="text-secondary" size={24} />
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Напишите в WhatsApp</p>
-                      <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-secondary transition-colors">+7 996 937-61-77</a>
+                      <p className="text-sm text-muted-foreground">Напишите нам</p>
+                      <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-secondary transition-colors">WhatsApp</a>
                     </div>
                   </div>
                 </div>
