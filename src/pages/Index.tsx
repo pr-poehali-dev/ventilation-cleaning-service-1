@@ -81,7 +81,7 @@ const Index = () => {
             
             <h1 className="font-heading text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
               Чистка вентиляции в Темрюке<br />
-              <span className="text-white/90">от 3000₽ | Выезд бесплатно</span>
+              <span className="text-white/90">от 1000₽ | Выезд бесплатно</span>
             </h1>
             
             <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">Прочистка воздуховодов, ТО систем вентиляции, ремонт. Работаем по договору подряда. Опыт 7 лет. Выезд и замеры бесплатно.</p>
