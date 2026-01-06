@@ -71,19 +71,19 @@ const Index = () => {
               <span className="text-white font-semibold">Профессиональное обслуживание</span>
             </div>
             
-            <h1 className="font-heading text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="font-heading text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
               Чистка и обслуживание<br />
               <span className="text-white/90">вентиляционных систем</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
               Работа на результат в Темрюке и Темрюкском районе. Договор подряда. Замеры и смета бесплатно.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in">
               <Button 
                 size="lg" 
-                className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
+                className="bg-white text-primary hover:bg-white/90 text-base px-6 py-4 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 <Icon name="Phone" className="mr-2" size={20} />
@@ -93,7 +93,7 @@ const Index = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6 transition-all duration-300 hover:scale-105"
+                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary text-base px-6 py-4 transition-all duration-300 hover:scale-105"
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 <Icon name="ArrowDown" className="mr-2" size={20} />
@@ -109,10 +109,10 @@ const Index = () => {
       <section id="services" className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
               Наши услуги
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Полный спектр работ по обслуживанию вентиляционных систем
             </p>
           </div>
@@ -131,10 +131,10 @@ const Index = () => {
                       <Icon name={service.icon as any} className="text-white" size={28} />
                     </div>
                     <div className="flex-1">
-                      <CardTitle className="text-2xl font-heading mb-2 group-hover:text-primary transition-colors">
+                      <CardTitle className="text-xl font-heading mb-2 group-hover:text-primary transition-colors">
                         {service.title}
                       </CardTitle>
-                      <CardDescription className="text-base leading-relaxed">
+                      <CardDescription className="text-sm leading-relaxed">
                         {service.description}
                       </CardDescription>
                     </div>
@@ -149,10 +149,10 @@ const Index = () => {
       <section className="py-20 px-4 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
               О компании
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Надежный партнер в обслуживании вентиляционных систем
             </p>
           </div>
@@ -168,7 +168,7 @@ const Index = () => {
                   <div className="inline-flex p-4 rounded-full bg-gradient-to-br from-primary to-secondary shadow-lg mb-4">
                     <Icon name={advantage.icon as any} className="text-white" size={32} />
                   </div>
-                  <p className="font-semibold text-lg text-foreground">{advantage.text}</p>
+                  <p className="font-semibold text-base text-foreground">{advantage.text}</p>
                 </CardContent>
               </Card>
             ))}
@@ -183,7 +183,7 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-heading text-2xl font-bold mb-3">Работаем с физическими и юридическими лицами</h3>
+                  <h3 className="font-heading text-xl font-bold mb-3">Работаем с физическими и юридическими лицами</h3>
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     Мы предлагаем как разовые услуги по чистке и обслуживанию, так и долгосрочные контракты. 
                     Готовы подписать договор подряда от физического лица к ООО или ИП.
@@ -212,10 +212,10 @@ const Index = () => {
       <section id="contact" className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12 animate-fade-in">
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
               Свяжитесь с нами
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-lg text-muted-foreground">
               Оставьте заявку и мы перезвоним в течение 15 минут
             </p>
           </div>
@@ -266,7 +266,7 @@ const Index = () => {
                 <Button 
                   type="submit" 
                   size="lg" 
-                  className="w-full bg-gradient-to-r from-primary via-secondary to-accent text-white text-lg py-6 hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]"
+                  className="w-full bg-gradient-to-r from-primary via-secondary to-accent text-white text-base py-5 hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]"
                 >
                   <Icon name="Send" className="mr-2" size={20} />
                   Отправить заявку
