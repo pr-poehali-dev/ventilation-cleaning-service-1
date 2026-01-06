@@ -295,11 +295,12 @@ const Index = () => {
               <div className="mt-8 pt-8 border-t-2 border-dashed border-border">
                 <div className="mb-6">
                   <Button
+                    variant="outline"
                     size="lg"
-                    className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold text-base py-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]"
+                    className="w-full text-base py-6 transition-all duration-300 hover:scale-[1.02]"
                     onClick={() => window.open(avitoLink, '_blank')}
                   >
-                    <Icon name="ExternalLink" className="mr-2" size={22} />
+                    <Icon name="ExternalLink" className="mr-2" size={20} />
                     Смотреть объявление на Авито
                   </Button>
                 </div>
