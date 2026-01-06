@@ -50,11 +50,17 @@ const Index = () => {
     { icon: 'Award', text: 'Гарантия качества' }
   ];
 
+  const phoneNumber = '+79530869887';
+  const whatsappLink = `https://wa.me/79530869887`;
+  const telLink = `tel:${phoneNumber}`;
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const message = `Имя: ${formData.name}%0AТелефон: ${formData.phone}%0AСообщение: ${formData.message}`;
+    window.open(`https://wa.me/79530869887?text=${message}`, '_blank');
     toast({
-      title: "Заявка отправлена!",
-      description: "Мы свяжемся с вами в ближайшее время.",
+      title: "Открываю WhatsApp!",
+      description: "Отправьте сообщение для связи с нами.",
     });
     setFormData({ name: '', phone: '', message: '' });
   };
@@ -84,20 +90,20 @@ const Index = () => {
               <Button 
                 size="lg" 
                 className="bg-white text-primary hover:bg-white/90 text-base px-6 py-4 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => window.location.href = telLink}
               >
                 <Icon name="Phone" className="mr-2" size={20} />
-                Заказать звонок
+                Позвонить
               </Button>
               
               <Button 
                 size="lg" 
                 variant="outline" 
                 className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary text-base px-6 py-4 transition-all duration-300 hover:scale-105"
-                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => window.open(whatsappLink, '_blank')}
               >
-                <Icon name="ArrowDown" className="mr-2" size={20} />
-                Наши услуги
+                <Icon name="MessageCircle" className="mr-2" size={20} />
+                Написать в WhatsApp
               </Button>
             </div>
           </div>
@@ -281,7 +287,7 @@ const Index = () => {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Позвоните нам</p>
-                      <p className="font-semibold text-foreground">Указано в объявлении</p>
+                      <a href={telLink} className="font-semibold text-foreground hover:text-primary transition-colors">+7 953 086-98-87</a>
                     </div>
                   </div>
                   
@@ -291,7 +297,7 @@ const Index = () => {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Напишите нам</p>
-                      <p className="font-semibold text-foreground">В сообщениях</p>
+                      <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-secondary transition-colors">WhatsApp</a>
                     </div>
                   </div>
                 </div>
@@ -333,7 +339,7 @@ const Index = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <Icon name="Phone" size={18} />
-                  <span>Указано в объявлении</span>
+                  <a href={telLink} className="hover:text-white/100 transition-colors">+7 953 086-98-87</a>
                 </li>
               </ul>
             </div>
