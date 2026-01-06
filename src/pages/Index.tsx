@@ -88,25 +88,36 @@ const Index = () => {
               Работа на результат в Темрюке и Темрюкском районе. Договор подряда. Замеры и смета бесплатно.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in">
+            <div className="flex flex-col gap-4 items-center animate-scale-in">
               <Button 
                 size="lg" 
-                className="bg-white text-primary hover:bg-white/90 text-base px-6 py-4 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
-                onClick={() => window.location.href = telLink}
+                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold text-base px-8 py-4 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
+                onClick={() => window.open(avitoLink, '_blank')}
               >
-                <Icon name="Phone" className="mr-2" size={20} />
-                Позвонить
+                <Icon name="ExternalLink" className="mr-2" size={20} />
+                Смотреть на Авито
               </Button>
               
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary text-base px-6 py-4 transition-all duration-300 hover:scale-105"
-                onClick={() => window.open(whatsappLink, '_blank')}
-              >
-                <Icon name="MessageCircle" className="mr-2" size={20} />
-                Написать в WhatsApp
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button 
+                  size="lg" 
+                  className="bg-white text-primary hover:bg-white/90 text-base px-6 py-4 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
+                  onClick={() => window.location.href = telLink}
+                >
+                  <Icon name="Phone" className="mr-2" size={20} />
+                  Позвонить
+                </Button>
+                
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary text-base px-6 py-4 transition-all duration-300 hover:scale-105"
+                  onClick={() => window.open(whatsappLink, '_blank')}
+                >
+                  <Icon name="MessageCircle" className="mr-2" size={20} />
+                  Написать в WhatsApp
+                </Button>
+              </div>
             </div>
           </div>
         </div>
