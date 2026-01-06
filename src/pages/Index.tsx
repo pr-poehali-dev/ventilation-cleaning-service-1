@@ -80,12 +80,12 @@ const Index = () => {
             </div>
             
             <h1 className="font-heading text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Чистка и обслуживание<br />
-              <span className="text-white/90">вентиляционных систем</span>
+              Чистка вентиляции в Темрюке<br />
+              <span className="text-white/90">от 3000₽ | Выезд бесплатно</span>
             </h1>
             
             <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Работа на результат в Темрюке и Темрюкском районе. Договор подряда. Замеры и смета бесплатно.
+              Прочистка воздуховодов, ТО систем вентиляции, ремонт. Работаем по договору подряда. Опыт 10+ лет. Выезд и замеры бесплатно.
             </p>
             
             <div className="flex flex-col gap-4 items-center animate-scale-in">
@@ -129,10 +129,10 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Наши услуги
+              Услуги по чистке и обслуживанию вентиляции в Темрюке
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Полный спектр работ по обслуживанию вентиляционных систем
+              Профессиональная прочистка воздуховодов, техническое обслуживание вентсистем, диагностика
             </p>
           </div>
 
@@ -169,10 +169,10 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-              О компании
+              Почему выбирают нашу компанию для чистки вентиляции
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Надежный партнер в обслуживании вентиляционных систем
+              Качественная прочистка вентканалов и воздуховодов в Темрюке и Темрюкском районе
             </p>
           </div>
 

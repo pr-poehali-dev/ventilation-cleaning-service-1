@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://ваш-домен.ru/</loc>
+    <loc>https://ventilation-cleaning-service-1.poehali.dev/</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://cdn.poehali.dev/projects/2d507dc4-57e0-49ed-8e40-bb3db11feeb8/files/og-image-1767717612396.jpg</image:loc>
+      <image:title>Чистка вентиляции в Темрюке — профессиональное обслуживание</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://ventilation-cleaning-service-1.poehali.dev/l</loc>
+    <lastmod>2026-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
